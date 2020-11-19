@@ -10,7 +10,7 @@ def Tokenize(doc):
     words = text.split(maxsplit=10000)
     return words
 # Abrimos las notas y las separamos por tokens
-buerak = open("buerak.txt", encoding="utf-8")
+buerak = open("Recursos/buerak.txt", encoding="utf-8")
 words =Tokenize(buerak)
 
 #Función para preprocesar las canciones quitando puntuación y convirtiendo la información en un solo formato
@@ -60,7 +60,7 @@ plt.show() #Esta función muestra la imagen generada
 
 from PIL import Image
 # Cargamos la mascara de la palabra Buerak para visualizar de otra forma la nube de palabras
-Buerak_mask = np.array(Image.open("Imagenes/Buerak.png"))
+Buerak_mask = np.array(Image.open("Recursos/Buerak.png"))
 
 wc = WordCloud(width=1800, height=1000,background_color="black", max_words=1000, mask=Buerak_mask,
                contour_width=1, contour_color='white', colormap='Set1')
