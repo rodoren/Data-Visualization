@@ -15,7 +15,7 @@ F_ab = function(a,b,n){
 
 #### Explicacion ####
 # Dentro de la funcion, se definen las muestras aleatorias independientes e 
-# identicamente distribuidas como Ji cuadrada de tamaño n, con a y b grados de
+# identicamente distribuidas como Ji cuadrada de tamaÃ±o n, con a y b grados de
 # libertad para X e Y respectivamente. Realizando la tranformacion de vector 
 # aleatorio a variable aleatoria, tenemos que la funcion F se distribuye F de 
 # Fisher con a y b grados de libertad.
